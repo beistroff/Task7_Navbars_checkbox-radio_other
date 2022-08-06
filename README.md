@@ -10,3 +10,5 @@ Task5_2 - task5_2.html
 Task6 - task6.html
 Task7_1 - index.html
 Task7_2 - index11.html/page1.html/page2.html
+
+Also, in Task7_2 I did some connection between the 3 pages with different width parameters
