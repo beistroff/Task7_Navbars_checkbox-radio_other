@@ -1,0 +1,100 @@
+
+*{
+  text-decoration: none;
+}
+header {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+header nav ul {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+header nav ul li{
+  cursor: pointer;
+  display: inline-block;
+  float: center;
+  list-style: none;
+  margin-left: 7px;
+  padding: 3px 9px;
+  background-color: #9fccf6;
+  transition: all 0.25s ease-in;
+  font-weight: 500;
+  font-size: 20px;
+  color: #4d4b4b;
+  text-transform:uppercase;
+  line-height: 35px;
+  font-family: system-ui;
+  border-bottom: 3px solid transparent;
+}
+
+header nav ul li:hover{
+  transition: all 0.15s ease-in;
+  color: #23539c;
+  background-color: none;
+  background: none;
+  border-bottom: solid 3px #1b8568;
+}
+
+main ul li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.button {
+  margin-top: 2px;
+  background-color: #c0dff1;
+  color: #007fc6;
+  padding: 16px 22px;
+  font-family: system-ui;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Position the dropdown content: ;*/
+.dropdown {
+  padding: 33px 0 0 10px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    margin-top: -43px;
+    display: none;
+    margin-left: 190px;
+    position: absolute;
+    background-color: #26a35c;
+    min-width: 100px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-size: 20px;
+    color: black;
+    font-family: system-ui;
+    padding: 16px 22px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.15s ease-in;
+}
+/* Change color of dropdown links */
+.dropdown-content a:hover {
+  background-color: #edf7fa;
+  color: rgb(0,127,198);
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Background color of the button */
+.dropdown:hover .button {
+  background-color: #B8DBEC;
+  transition: 0.3s;
+}

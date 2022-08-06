@@ -1,0 +1,73 @@
+ *{
+   text-decoration: none;
+ }
+ body{
+   background: #edfaea;
+   font-family: system-ui;
+ }
+
+.container{
+  background: #fff;
+  flex-direction: row;
+  padding: 24px 12px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+[type="radio"] {display: none;}
+
+.order-radio{
+  display: inline-flex;
+  padding-left: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 20px;
+  align-items: center;
+}
+.order-block-client input[type="radio"] {
+  cursor: pointer;
+  display: none;
+}
+.order-radio:hover{
+  color: #007FC6;
+  transition: 0.15s;
+}
+.radio-input{
+  width: 1em;
+  height: 1em;
+  border: 2px solid #111;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: background 0.25s, border-color 0.25s;
+}
+.radio-input::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0.75em;
+  height: 0.75em;
+  background: rgb(0, 127, 198, 0);
+  border-radius: 50%;
+  transition: transform 0.25s;
+}
+.checkradio:checked + .radio-input{
+  border-color: #007FC6;
+}
+.space-between{
+  margin-left: 30px;
+}
+.span-client{
+  font-size: 20px;
+  font-family: system-ui;
+  font-weight: 500;
+}
+input[type="radio"]:checked + div::after{
+  transition: all 0.15s ease-in;
+  background: rgb(0, 127, 198, 1);
+}

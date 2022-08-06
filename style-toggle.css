@@ -1,0 +1,78 @@
+.Toggle-menu {
+  background-color: #39d66e;
+  display: flex;
+  padding: 28px;
+  font-family: system-ui;
+  color: white;
+}
+.Toggle-brand{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-right: 50px;
+}
+
+.Toggle-links {
+  font-size: 19px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  line-height: 42px;
+}
+
+.Navbar__Items {
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  visibility: hidden;
+  color: #fff;
+  display: flex;
+}
+
+.Navbar__Items--right {
+  transition: all 0.3s ease-in-out;
+  margin-left:auto;
+}
+
+.Toggle-links-display {
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Toggle-menu {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+  }
+  .Toggle-menu:hover{color: #fff;}
+.Navbar__Items:hover{ transition: all 0.3s ease-in-out;}
+.btn a i:hover{color:#f0f0f0; }
+.Navbar__Items {
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  display:none;
+}
+
+.Navbar__Items--right {
+    margin-left:0;
+  }
+
+.Navbar__ToggleShow {
+  transition: all 0.3s ease-in-out;
+    display: flex;
+  }
+
+.Toggle-links-display {
+  transition: all 0.3s ease-in-out;
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   }
+   .Toggle-links-display a i{
+     transition: all 0.3s ease-in-out;
+     color: #fff;
+   }
+
+}

@@ -1,0 +1,66 @@
+*{
+  text-decoration: none;
+}
+
+body{
+  background: #8cb7f7;
+  font-family: system-ui;
+}
+
+.container{
+  padding: 24px 12px;
+  width: 70%;
+  background: #fff;
+  flex-direction: row;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+[type="checkbox"]{display: none;}
+
+.custom-checkbox{
+  display: inline-flex;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 20px;
+  align-items: center;
+}
+
+.custom-checkbox:hover{
+  color: #007FC6;
+  transition: 0.15s;
+}
+.custom-checkbox .check-input:hover{
+  background: #dad7d5;
+  transition: 0.15s;
+}
+.check-input{
+  border-radius: 3px;
+  background: #ebebeb;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #5d5d5d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  transition: 0.15s ease-in;
+}
+.check-input::after{
+  content: '';
+  background-image: url(img/check.png);
+  background-size: contain;
+  color: #111;
+  transition: 0.15s;
+}
+.checked:checked + .check-input{
+  transition: 0.15s ease-in;
+  background: #cdeefa;
+  background-image: url(img/check.png);
+  background-size: contain;
+  border-color: #007FC6;
+  outline: 2px solid #1b45a2;
+}
